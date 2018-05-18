@@ -8,10 +8,16 @@
     <title>个人简历</title>
     <!-- <link rel="stylesheet" href="./style_1.css">  -->
     <!-- <link rel="stylesheet" href="./style_2.css"> -->
-    <link rel="stylesheet" href="./style_3.css">
+    <link id="link" rel="stylesheet" href="./style_3.css">
 </head>
 
 <body>
+    <nav>
+        <span>切换样式</span>
+        <button class="style_btn" data-file="style_1">样式一</button>
+        <button class="style_btn" data-file="style_2">样式二</button>
+        <button class="style_btn" data-file="style_3">样式三</button>
+    </nav>
     <div class="container">
         <header>
             <h1 class="title">简历</h1>
@@ -82,6 +88,16 @@
             </div>
         </div>
     </div>
+    <script>
+        var link = document.getElementById("link");
+        var btn = document.querySelectorAll(".style_btn");
+        for (var i=0; i<btn.length; i++) {
+            btn[i].onclick = function() {
+                var cssLink = "./" + this.dataset.file + ".css";
+                link.setAttribute("href", cssLink);
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 b {
     margin-right: 10px;
 }
-span {
+span:not(:first-child) {
     margin-right: 40px;
 }
 .item:nth-child(n + 4) span {
