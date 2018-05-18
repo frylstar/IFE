@@ -20,41 +20,38 @@
     </nav>
     <div class="container">
         <header>
-            <h1 class="title">简历</h1>
+            <h1 class="title">soul</h1>
         </header>
         <div class="info">
-            <div class="item">
+            <section>
                 <h2>基本信息</h2>
+                <div class="item">
                 <p>
-                    <span>
-                        <b>姓名</b>张三
-                    </span>
-                    <span>
-                        <b>性别</b>男
-                    </span>
-                    <span>
-                        <b>应聘职位</b>前端工程师
-                    </span>
+                    <b>姓名</b>
+                    <span>张三</span>
+                    <b>性别</b>
+                    <span>男</span>
+                    <b>应聘职位</b>
+                    <span>前端工程师</span>
                 </p>
             </div>
-            <div class="item">
+            </section>
+            <section>
                 <h2>联系方式</h2>
+                <div class="item">
                 <p>
-                    <span>
-                        <b>手机</b>18600000000
-                    </span>
-                    <span>
-                        <b>Email</b>
-                        <a href="#">lajiyouxilol@baidu.com</a>
-                    </span>
-                    <span>
-                        <b>个人主页</b>
-                        <a href="#">Github</a>
-                    </span>
+                    <b>手机</b>
+                    <span>18600000000</span>
+                    <b>Email</b>
+                    <span><a href="#">lajiyouxilol@baidu.com</a></span>
+                    <b>个人主页</b>
+                    <span><a href="#">Github</a></span>
                 </p>
             </div>
-            <div class="item">
+            </section>
+            <section>
                 <h2>能力描述</h2>
+                <div class="item">
                 <p>
                     <b>技术能力</b>
                     <span>熟练掌握HTML,CSS,JavaScript</span>
@@ -64,8 +61,10 @@
                     <span>良好的沟通，主动积极，努力勤奋</span>
                 </p>
             </div>
-            <div class="item">
+            </section>
+            <section>
                 <h2>教育经历</h2>
+                <div class="item">
                 <p>
                     <b>本科</b>
                     <span>百度前端技术学院小薇学院</span>
@@ -75,8 +74,10 @@
                     <span>百度前端技术学院大斌学院</span>
                 </p>
             </div>
-            <div class="item">
+            </section>
+            <section>
                 <h2>项目经历</h2>
+                <div class="item">
                 <p>
                     <b>小度小度</b>
                     <span>作为前端工程师角色参与了ABC组件的开发</span>
@@ -85,7 +86,8 @@
                     <b>SAN Doc</b>
                     <span>作为文档工程师参与了SAN Doc编写</span>
                 </p>
-            </div>
+                </div>
+             </section>   
         </div>
     </div>
     <script>
@@ -98,6 +100,15 @@
             }
         }
     </script>
+     <!-- <script>   
+            var link = document.querySelector('link');
+            var buttonList = document.querySelectorAll('button');
+            buttonList.forEach(function (value, index) {
+                value.onclick = function () {
+                    link.href = './style_' + (index + 1) + '.css'  // () is necessary
+                }
+            })
+        </script> -->
 </body>
 
 </html>
