@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    /* --------------左侧30%，右侧70%---两栏布局--------------------------- */
+    /* 1、----------浮动float：left方法----------------- */
+    /* .left {
+        background: lime;
+        width: 30%;
+        float: left;
+    }
+    .right {
+        background: blue;
+        width: 70%;
+        float: left;
+    } */
+    /* 2、-------------Flexbox方法------------------------ */
+    /* .container {
+        display: flex;
+    }
+    .left {
+        flex: 3;
+    }
+    .right {
+        flex: 7;
+    } */
+    /* 3、----------------position方法--------------------- */
+    /* body {
+        position: relative;
+    }
+    .left {
+        position: absolute;
+        left: 0;
+        width: 30%;
+    }
+    .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 70%;
+    } */
+    /* AAA-------------左侧固定宽度，右侧自适应，两栏布局------------------------------- */
+    /* --------------float+margin-left方案----------- */
+    /*
+    .container {
+        overflow: hidden;
+    } 
+    .left {
+        width: 300px;
+        float: left;
+    }
+    .right {
+        margin-left: 300px;
+    } */
+    /* -----------------aboslute + margin-left 方案----------------- */
+    /* .left {
+        position: absolute;
+        width: 300px;
+    }
+    .right {
+        margin-left: 300px;
+    } */
+    /*---------------------- 双float方法------------------------ */
+    /* .container {
+        overflow: hidden;
+    }
+    .left, .right {
+        float: left;
+    }
+    .right {
+        width: calc(100% - 300px);
+    } */
+    /* --------------------使用float + BFC方法------------------ */
+    .container {
+        overflow: auto;
+    }
+    .left {
+        float: left;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="left" style="background:blue; width: 300px;">left</div>
+        <div class="right" style="background: lime;">right</div>
+    </div>                                
+</body>
+</html>
