@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-width: 700px;
+    }
+
+    header,
+    footer {
+        background: #aaa;
+        /* text-align: center; */
+    }
+    .main, .sub, .extra {
+        float: left;
+    }
+    .main {
+        width: 100%;
+    }
+    .main-inner {
+        margin-left: 200px;
+        margin-right: 220px;
+        background: yellow;
+        min-height: 130px;
+        word-break: break-all;
+    }
+    .sub {
+        width: 200px;
+        background: lime;
+        margin-left: -100%;
+    }
+    .extra {
+        width: 220px;
+        background: blue;
+        margin-left: -220px;
+    }
+    footer {
+        clear: both;
+    }
+</style>
+
+<body>
+    <header>
+        <h4>Header</h4>
+    </header>
+
+    <div class="main">
+        <div class="main-inner">
+            <h4>main</h4>
+            <p>HHHHHHHHHHHHHHHHHHHHHH hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh HHHHHHHHHHHHHHHHHHHHHH hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+            </p>
+        </div>
+    </div>
+    <div class="sub">
+        <h4>sub</h4>
+        <p>oooooooooooooo 0000000000000000 00000000000000000 ooooooooooooooo ooooooooooooooo 000000000000000
+        </p>
+    </div>
+
+    <div class="extra">
+        <h4>extra</h4>
+        <p>BBBBBBBBBBBBBB 888888888888888888 BBBBBBBBBBBBBBBBBB 88888888888888888888
+        </p>
+    </div>
+
+    <footer>
+        <h4>footer</h4>
+    </footer>
+</body>
+
+</html>
