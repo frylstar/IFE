@@ -1,0 +1,153 @@
+/* 引入字体 */
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url('../font/Montserrat-ExtraLight.ttf') format('truetype');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* 保证所有内容可视，取内容块中最宽的尺寸 */
+    min-width: 1170px;
+    font: 16px/1.5 'Montserrat-ExtraLight', Geneva, sans-serif;
+    color: #141414;
+  }
+  /* 公用样式 */
+h1, h2, h3, p {
+    text-align: center;
+}
+   /* -------------Header区域 -----------*/
+header {
+    width: 100%;
+    height: 990px;
+    background-image: url("../images/header.png");
+    background-size: cover;   /*把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。*/
+    /* background-size: contain; */  /*把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。*/
+    /* background: 100% auto; */
+    color: #fff;
+}
+.hd-container {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+h1 {
+    font-size: 64px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+.hd-p {
+    width: 770px;
+    margin: 100px auto;
+    font-size: 20px;
+    font-weight: 100;
+    opacity: 0.8;
+}
+.hd-account {
+    width: 970px;
+    height: 250px;
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid #aaa; 
+}
+.hd-account h3 {
+    margin-top: 50px;
+}
+.hd-account p {
+    margin-bottom: 50px;
+}
+.hd-account input {
+    width: 290px;
+    height: 48px;
+    border: 1px solid #aaa;
+    background: transparent;   /*输入框背景颜色为透明*/
+    /* color: inherit; */
+}
+.hd-sign-up {
+    width: 125px;
+    height: 50px;
+}
+/*------------PART 2------------*/
+.box-sec {
+    width: 100%;
+    height: 710px;
+}
+.box-sec h4 {
+    text-align: center;
+    padding-top: 80px;
+}
+.box-sec h2 {
+    width: 680px;
+    margin: 20px auto 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+.features {
+    width: 100%;
+    margin-top: 75px;
+    position: relative;
+}
+
+.advantage {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    list-style-type: none;
+    border: 1px solid red;
+}
+.item {
+    float: left;
+    width: 450px;
+    height: 125px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    /* padding-left: 80px; */
+    position: relative;
+    border: 1px solid lime;
+}
+.item:nth-child(odd) {
+    margin-left: 30px;
+}
+.item:nth-child(even) {
+    margin-left: 40px;
+}
+.item h3 {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-weight: normal;
+}
+.item-p {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+/* -------------PART  3---------- */
+.support {
+    width: 100%;
+    height: 800px;
+    background: url("../images/Background2.png") no-repeat;
+    background-size: contain;
+    color: #aaa;
+}
+.sup-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    border: 1px solid #fff;
+    padding: 200px 0 100px 200px;
+}
+.sup-wrap h2,
+.sup-wrap p {
+    text-align: left;
+}
+.sup-wrap button {
+    width: 150px;
+    height: 100px;
+    background: #fff;
+}
