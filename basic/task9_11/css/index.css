@@ -127,27 +127,187 @@ h1 {
     top: 40px;
     left: 50px;
 }
-/* -------------PART  3---------- */
+/* -------------SECTION 3---------- */
 .support {
-    width: 100%;
+    position: relative;
     height: 800px;
     background: url("../images/Background2.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
     color: #aaa;
 }
-.sup-wrap {
-    box-sizing: border-box;
-    width: 100%;
-    height: 600px;
-    border: 1px solid #fff;
-    padding: 200px 0 100px 200px;
+.sup-content {
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    width:520px;
+    height: 480px;
+    border: 1px solid lightcoral;
 }
-.sup-wrap h2,
-.sup-wrap p {
+.sup-content  h2{
+    font-size: 42px;
     text-align: left;
+    width: 390px;
 }
-.sup-wrap button {
-    width: 150px;
-    height: 100px;
+.sup-content p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: left;
+    width: 390px;   
+}
+.sup-content button {
+    width: 240px;
+    height: 60px;
+    margin-left: 10px;
     background: #fff;
+}
+/* section 4 */
+.try {
+    height: 600px;
+    position: relative; 
+}
+.try .try-wraper {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.try h2 {
+    padding-top: 100px;
+    font-size: 38px;
+    font-weight: normal;
+}
+.try .box {
+    width: 280px;
+}
+.try h4 {
+    height: 100px;
+}
+.singleton h4 {
+    background: url(../images/Singleton.png) no-repeat center;
+}
+.hero h4 {
+    background: url(../images/Hero.png) no-repeat center;
+}
+.portland h4{
+    background: url(../images/Portland.png) no-repeat center;
+}
+.hero {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* --------------section 5----------- */
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* justify-content: space-between;  */
+}
+.info-box {
+    width: 1050px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.second {
+    margin-bottom: 100px;
+}
+.first img {
+    float: left;
+}
+.second img {
+    float: right;
+}
+/*------------- section 6 ------------*/
+.guys h2 {
+    font-size: 48px;
+    margin-top: 100px;
+}
+.guys p {
+    font-size: 24px;
+    margin-top: 50px;
+}
+.four-guy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.guys img {
+    width: 500px;
+    height: 350px;
+    margin-top: 50px;
+}
+img:nth-of-type(odd) {
+    margin-right: 80px;
+}
+/* 倒数第二行 */
+.last {
+    height: 700px;
+    position: relative;
+}
+.contact1 {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    width: 470px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 50px;
+}
+.contact1 input, .contact1 button {
+    width: 370px;
+    height: 50px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    margin: 20px auto;
+}
+.contact1 button {
+    background: #141414;
+    color: #fff;
+}
+.contact1 textarea {
+    width: 370px;
+    height: 144px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    margin: 20px auto;
+}
+.contact2 {
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    width: 470px;
+    border: 1px solid #aaa;
+}
+.contact2 h4 {
+    margin-top: 158px;
+}
+.contact2 .item-dl p {
+    margin-top: 39px;
+    
+}
+.contact2 span {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.address span {
+    background: url(../images/Map\ Icon.png) no-repeat center;
+}
+.phone span {
+    background: url(../images/Phone\ Icon.png) no-repeat center;
+}
+.email span {
+    background: url(../images/Mail\ Icon.png) no-repeat center;
+}
+.address {
+    margin-top: 30px;
+}
+.phone {
+    margin-top: 30px;
+}
+.email {
+    margin-top: 30px;
 }
